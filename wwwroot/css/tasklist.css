@@ -1,0 +1,115 @@
+﻿:root {
+    --turquoise-primary: #20c997;
+    --turquoise-dark: #1da37b;
+    --turquoise-light: #e6f7f2;
+    --gray-text: black;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container.mt-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h3.mb-0 {
+    color: #343a40;
+}
+
+.custom-add-task-btn {
+    background-color: var(--turquoise-primary);
+    border-color: var(--turquoise-primary);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .custom-add-task-btn:hover {
+        background-color: var(--turquoise-dark);
+        border-color: var(--turquoise-dark);
+    }
+
+.custom-rounded-table {
+    border-collapse: separate;
+    border-spacing: 0 0.8rem;
+    width: 100%;
+}
+
+    .custom-rounded-table caption {
+        color: var(--gray-text);
+        padding-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+.custom-table-header {
+    background-color: var(--turquoise-primary);
+    border-radius: .75rem .75rem 0 0;
+    overflow: hidden;
+}
+
+    .custom-table-header th {
+        color: grey;
+        padding: 1rem 1rem;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: none;
+    }
+
+.custom-table-row {
+    background-color: lightslategrey;
+    border-radius: .75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .custom-table-row:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-table-row td {
+        padding: 1rem 1rem;
+        border-top: none;
+        border-bottom: none;
+        vertical-align: middle;
+    }
+
+        .custom-table-row td:first-child {
+            border-top-left-radius: .75rem;
+            border-bottom-left-radius: .75rem;
+        }
+
+        .custom-table-row td:last-child {
+            border-top-right-radius: .75rem;
+            border-bottom-right-radius: .75rem;
+        }
+
+.task-actions {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+
+.custom-table-row:hover .task-actions {
+    opacity: 1;
+}
+
+.task-actions .btn {
+    border-radius: .3rem;
+    font-size: 0.85rem;
+    padding: .4rem .75rem;
+}
+
+.task-actions .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.task-actions .btn-danger {
+    background-color: #dc3545;
+    </style>

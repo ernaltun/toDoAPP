@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="jumbotron text-center bg-light p-4 rounded shadow-sm mb-5">
+    <h1 class="display-4 text-primary">Görevlerinize Odaklanın, Başarıya Ulaşın!</h1>
+    <p class="lead mt-3">Günlük işlerinizi, projelerinizi veya kişisel hedeflerinizi takip etmek artık çok daha kolay. Görev Takip Uygulaması ile karmaşayı geride bırakın, düzeni yakalayın.</p>
+    <hr class="my-4">
+    <p>Hemen şimdi başlayın ve daha üretken bir siz olun!</p>
+    <a class="btn btn-primary btn-lg" href="/User/Register" role="button">Ücretsiz Kayıt Ol</a>
+    <a class="btn btn-outline-primary btn-lg ms-2" href="/User/Login" role="button">Giriş Yap</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title text-primary"><i class="bi bi-check-circle-fill me-2"></i>Görevlerinizi Düzenleyin</h5>
+                <p class="card-text">Tüm görevlerinizi tek bir yerde toplayın, önceliklendirin ve kategorilere ayırın. Böylece hiçbir şeyi gözden kaçırmazsınız.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title text-primary"><i class="bi bi-clock-fill me-2"></i>Zaman Yönetimi</h5>
+                <p class="card-text">Görevlerinize başlangıç ve bitiş tarihleri atayarak zamanınızı daha verimli kullanın ve son teslim tarihlerini kaçırmayın.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title text-primary"><i class="bi bi-graph-up-arrow me-2"></i>Üretkenliğinizi Artırın</h5>
+                <p class="card-text">Tamamladığınız görevleri işaretleyerek ilerlemenizi görün. Bu, motivasyonunuzu artıracak ve daha fazlasını başarmak için size ilham verecek.</p>
+            </div>
+        </div>
+    </div>
+</div>
